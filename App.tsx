@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Nuria, tu parte correspondiente</Text>
+      <Text>Dividir proceso de darrollo
+      
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
