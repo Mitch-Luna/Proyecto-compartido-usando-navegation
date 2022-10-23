@@ -1,8 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 
 export default function Cabecera() {
+  const [fontsLoaded] = useFonts({
+    'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
+    'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
+    
+})
+if (!fontsLoaded) return null;
   return (
     <View style={styles.container}>
         <View style={styles.contenedorletras}>
@@ -10,7 +17,7 @@ export default function Cabecera() {
         </View>
         <TextInput
         style={styles.input}
-        placeholder='  Search recipes'
+        placeholder='   🔍 Search recipes'
         />
         
     </View>
@@ -19,7 +26,6 @@ export default function Cabecera() {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
     backgroundColor:'',
     marginLeft:19,
     marginTop:54,
@@ -31,6 +37,7 @@ const styles = StyleSheet.create({
     height:90,
   },
   letras:{
+    fontFamily:'Secular One',
     fontSize:27,
   },
   input:{ 

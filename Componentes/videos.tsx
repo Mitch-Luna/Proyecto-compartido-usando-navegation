@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,ScrollView, SafeAreaView,Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 
 interface Props{
   imagen :{},
@@ -13,6 +14,12 @@ interface Props{
 }
 
 export default function Videos({imagen, cantidad, imagenDos, textDos, nombrePersona}:Props) {
+  const [fontsLoaded] = useFonts({
+    'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
+    'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
+    
+})
+if (!fontsLoaded) return null;
   return (
     <View style={styles.container}>
     <ScrollView
@@ -128,7 +135,7 @@ const styles = StyleSheet.create({
     backgroundColor:'',
     flexDirection:'column',
     width:'100%',
-    height:75,
+    height:85,
   },
   letras:{
     flexDirection:'row',
@@ -142,7 +149,9 @@ const styles = StyleSheet.create({
   },
 
   nombre:{
-    fontSize:15,
+    marginTop:5,
+    fontFamily:'Secular One',
+    fontSize:16,
   },
   contenedorPerfil:{
     marginTop:10,

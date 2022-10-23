@@ -9,7 +9,7 @@ const  Home =() =>{
       <ScrollView>
   
       
-        <Videos />
+        <Text>Hola</Text>
 
       
       </ScrollView>

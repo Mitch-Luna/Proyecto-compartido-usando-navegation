@@ -1,17 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 
 interface Props{
     text: string
 }
 export default function Contenedorcito( {text}: Props) {
+  const [fontsLoaded] = useFonts({
+    'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
+    'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
+    
+})
+if (!fontsLoaded) return null;
   return (
     <View style={styles.container}>
         <View style={styles.subcontenedor}>
             <Text style={styles.letritas}> {text} </Text>
             <Text style={styles.miniletras}> See all</Text>
-            <AntDesign style={styles.flecha} name="arrowright" size={19} color="red" />
+            <AntDesign style={styles.flecha} name="arrowright" size={24} color="red" />
         </View>
         
     </View>
@@ -20,7 +27,6 @@ export default function Contenedorcito( {text}: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
     backgroundColor:'',
     marginLeft:19,
     marginTop:4,
@@ -50,14 +56,16 @@ const styles = StyleSheet.create({
     height:35,
   },
   letritas:{
-    fontSize:23,
+    fontFamily:'Secular One',
+    fontSize:25,
   },
   miniletras:{
+    fontFamily:'Secular One',
     marginLeft:'auto',
     fontSize:19,
     color:'red'
   },
   flecha:{
-    marginTop:6,
+    marginTop:2,
   }
 });

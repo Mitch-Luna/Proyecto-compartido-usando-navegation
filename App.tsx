@@ -7,6 +7,7 @@ import Botones from './Componentes/botones';
 import Platillos from './Componentes/platillos';
 import Contenedorcito from './Componentes/contenedorcito';
 import PlatoReciente from './Componentes/platoReciente';
+import Perfiles from './Componentes/perfiles';
 
 export default function App() {
   return (
@@ -56,12 +57,12 @@ export default function App() {
               textDos={'10 Mins'}
             />
             <Platillos
-              imagen={require('./assets/Images/segundo.png')}
+              imagen={require('./assets/Images/plato.png')}
               textUno={'Chaddar cheese \n and shell salad'}
               textDos={'20 Mins'}
             />
             <Platillos
-              imagen={require('./assets/Images/segundo.png')}
+              imagen={require('./assets/Images/otroPlato.png')}
               textUno={'Pepper requeichon \n comidechon'}
               textDos={'30 Mins'}
             />
@@ -70,15 +71,54 @@ export default function App() {
           <Contenedorcito
             text={' Recientes 🔥'}
           />
+          <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          >
           <PlatoReciente
-          
+          imagen={require('./assets/Images/sandwit.jpeg')}
+          textUno={'Indonesian \n chicken burger'}
+          textDos={'By Adrianna Curl'}
           />
-          <Navegation/>
+          <PlatoReciente
+          imagen={require('./assets/Images/tres.jpeg')}
+          textUno={'Home made \n cute pancake'}
+          textDos={'By Jame Wolden'}
+          />
+          <PlatoReciente
+          imagen={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmDgNR7fAPe4jRyb8RVncx2LfdgvwmiRNDg&usqp=CAU'}}
+          textUno={'How to \n delicious '}
+          textDos={'By Adrianna Curl'}
+          />
+          </ScrollView> 
+          <Contenedorcito
+            text={'Creadores populares'}
+          /> 
+          <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          >
+          <Perfiles
+          imagen={{uri:'https://media.gq.com.mx/photos/6168a86329f5200b0a38f203/master/w_2000,h_3000,c_limit/cual-es-el-significado-de-vestir-siempre-de-color-negro-psicologia-hombre-traje.jpg'}}
+          text={'Troyan \n Smitch'}
+          />   
 
-          
-
+          <Perfiles
+          imagen={{uri:'https://media.gettyimages.com/photos/smiling-teenager-picture-id583862104?s=612x612'}}
+          text={'Ijames \n Wolden'}
+          /> 
+          <Perfiles
+          imagen={require('./assets/Images/muchacha.jpeg')}
+          text={'Niki \n Samantha'}
+          /> 
+          <Perfiles
+          imagen={{uri:'https://media.istockphoto.com/photos/beautiful-girl-in-a-white-tshirt-and-jeans-on-a-gray-background-picture-id1216555577?s=612x612'}}
+          text={'Niki \n Samantha'}
+          /> 
+          </ScrollView>  
         </View>
       </ScrollView>
+      
     </SafeAreaView>
   );
 }

@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image, ScrollView } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 
 interface Props{
     imagen: {},
@@ -9,6 +10,12 @@ interface Props{
     textDos:string
 }
 export default function Platillos({imagen, textUno,textDos} :Props) {
+    const [fontsLoaded] = useFonts({
+        'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
+        'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
+        
+    })
+    if (!fontsLoaded) return null;
     return (
         <View style={styles.container}>
     
@@ -47,6 +54,7 @@ const styles = StyleSheet.create({
         height: 220,
     },
     letras: {
+        fontFamily:'Secular One',
         marginTop:12,
         fontSize: 17,
     },
@@ -64,6 +72,7 @@ const styles = StyleSheet.create({
         fontSize:15
     },
     cantidadTime:{
+        fontFamily:'Secular One',
         color:'black',
         marginHorizontal:12,
         marginTop:8,

@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, ScrollView } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-
-
+import { useFonts } from 'expo-font';
 
 export default function Botones() {
+  const [fontsLoaded] = useFonts({
+    'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
+    'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
+    
+})
+if (!fontsLoaded) return null;
   return (
     <View style={styles.container}>
         <View style={styles.contenedorletras}>
@@ -58,6 +63,7 @@ const styles = StyleSheet.create({
     height:40,
   },
   letras:{
+    fontFamily:'Secular One',
     fontSize:27,
   },
   input:{ 
@@ -83,8 +89,9 @@ const styles = StyleSheet.create({
     borderRadius:14,
   },
   nombreBotones:{
+    fontFamily:'Secular One',
     marginTop:12,
-    fontSize:17,
+    fontSize:20,
     alignSelf:'center',
     color:'red'
   },
@@ -96,8 +103,9 @@ const styles = StyleSheet.create({
     borderRadius:14,
   },
   nombreBotonDos:{
+    fontFamily:'Secular One',
     marginTop:8,
-    fontSize:19,
+    fontSize:20,
     alignSelf:'center',
     color:'white'
   },
