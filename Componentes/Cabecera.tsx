@@ -18,8 +18,7 @@ if (!fontsLoaded) return null;
         <TextInput
         style={styles.input}
         placeholder='   🔍 Search recipes'
-        />
-        
+        />     
     </View>
   );
 }
