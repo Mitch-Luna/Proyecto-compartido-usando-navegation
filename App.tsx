@@ -11,7 +11,7 @@ import Perfiles from './Componentes/perfiles';
 
 export default function App() {
   return (
-<<<<<<< HEAD
+
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar backgroundColor={"white"} />
       <ScrollView>
@@ -121,12 +121,7 @@ export default function App() {
       </ScrollView>
       
     </SafeAreaView>
-=======
-    <View style={styles.container}>
-      <Text>Michell</Text>
-      <StatusBar style="auto" />
-    </View>
->>>>>>> 4208ba7db33af7bf894b3fb19f1e5d37fb656e23
+
   );
 }
 
