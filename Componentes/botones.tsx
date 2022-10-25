@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   botonDos:{
     marginHorizontal:12,
-    backgroundColor:'red',
+    backgroundColor:'rgb(191, 17, 17)',
     width:105,
     height:48,
     borderRadius:14,

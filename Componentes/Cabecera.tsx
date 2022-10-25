@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
+
 
 export default function Cabecera() {
   const [fontsLoaded] = useFonts({
@@ -15,11 +16,13 @@ if (!fontsLoaded) return null;
         <View style={styles.contenedorletras}>
         <Text style={styles.letras}>Encontrar las mejores recetas para cocinar</Text>
         </View>
-        <TextInput
-        style={styles.input}
-        placeholder='   🔍 Search recipes'
-        />     
-    </View>
+        <View style={styles.input}>
+        <Entypo style={styles.lupa} name="magnifying-glass" size={30} color="rgb(223, 223, 223)" />
+        <Text style={styles.letra}>Search recipes</Text>
+        </View>
+        </View>
+    
+
   );
 }
 
@@ -40,6 +43,7 @@ const styles = StyleSheet.create({
     fontSize:27,
   },
   input:{ 
+    flexDirection:'row',
     marginTop:12,
     borderRadius:13,
     borderWidth:2,
@@ -64,5 +68,15 @@ const styles = StyleSheet.create({
   },
   flecha:{
     marginTop:6,
+  },
+  letra:{
+    marginTop:5,
+    marginHorizontal:-8,
+    color:'rgb(223, 223, 223)',
+    fontSize:18
+  },
+  lupa:{
+    marginTop:5,
+    marginHorizontal:12,
   }
 });

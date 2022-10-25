@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
     marginHorizontal:10,
   },
   letrasDos:{
+    fontFamily:'Kanit',
     fontSize:12,
     color:'gray',
     marginHorizontal:10,

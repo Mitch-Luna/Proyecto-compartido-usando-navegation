@@ -102,20 +102,20 @@ export default function Vista1() {
 
           <Perfiles
           imagen={{uri:'https://media.gq.com.mx/photos/6168a86329f5200b0a38f203/master/w_2000,h_3000,c_limit/cual-es-el-significado-de-vestir-siempre-de-color-negro-psicologia-hombre-traje.jpg'}}
-          text={'Troyan \n Smitch'}
+          text={'  Troyan \n  Smitch'}
           />   
 
           <Perfiles
           imagen={{uri:'https://media.gettyimages.com/photos/smiling-teenager-picture-id583862104?s=612x612'}}
-          text={'Ijames \n Wolden'}
+          text={'  Ijames \n  Wolden'}
           /> 
           <Perfiles
           imagen={require('../assets/Images/muchacha.jpeg')}
-          text={'Niki \n Samantha'}
+          text={'      Niki \n   Samantha'}
           /> 
           <Perfiles
           imagen={{uri:'https://media.istockphoto.com/photos/beautiful-girl-in-a-white-tshirt-and-jeans-on-a-gray-background-picture-id1216555577?s=612x612'}}
-          text={'Niki \n Samantha'}
+          text={' Roberta \n    Anny'}
           /> 
           </ScrollView>  
         </View>

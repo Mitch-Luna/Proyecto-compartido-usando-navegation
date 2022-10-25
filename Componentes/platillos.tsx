@@ -65,11 +65,12 @@ const styles = StyleSheet.create({
         height: 120,
     },
     letraTime:{
+        fontFamily:'Secular One',
         color:'gray',
         marginHorizontal:12,
         marginTop:28,
         marginRight:'auto',
-        fontSize:15
+        fontSize:12
     },
     cantidadTime:{
         fontFamily:'Secular One',

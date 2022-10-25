@@ -10,7 +10,6 @@ export default function HomeDos() {
 
     <View style={styles.container}>
 
-      <Cabecera/>
       </View>
     </ScrollView>
     </SafeAreaView>
