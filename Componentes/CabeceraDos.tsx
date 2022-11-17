@@ -4,7 +4,7 @@ import { Entypo } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
 
 
-export default function Cabecera() {
+export default function CabeceraDos() {
   const [fontsLoaded] = useFonts({
     'Kanit': require('../assets/Font/Kanit-Regular.ttf'),
     'Secular One': require('../assets/Font/SecularOne-Regular.ttf'),
