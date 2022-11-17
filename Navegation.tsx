@@ -10,7 +10,7 @@ import Home from "./screen/home";
 import HomeDos from "./screen/homedos";
 import Vista1 from "./screen/Vista1";
 import vista4 from "./screen/vista4";
-import Vista4 from "./screen/vista4";
+
 
 const Tab = createBottomTabNavigator();
 
