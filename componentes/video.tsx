@@ -17,7 +17,7 @@ if (!fontsLoaded) return null;
       <View style={styles.detalles}>
       <Image
       style={styles.video}
-      source={require('../assets/images/imagenUno.jpeg')}/>
+      source={require('../assets/Images/imagenUno.jpeg')}/>
       <View style={styles.containerIconoVideo}>
         <AntDesign style={styles.iconoVideo} name="caretright" size={24} color="white" />
       </View>

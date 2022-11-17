@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Cabecera from '../componentes/cabecera';
-import Video from '../componentes/video';
-import Items from '../componentes/items';
-import Perfil from '../componentes/perfil';
-import Ingredientes from '../componentes/ingredientes';
+import Cabecera from '../Componentes/cabecera';
+import Video from '../Componentes/video';
+import Items from '../Componentes/items';
+import Perfil from '../Componentes/perfil';
+import Ingredientes from '../Componentes/ingredientes';
 
 export default function Vista4() {
   return (

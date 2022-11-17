@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
-import Cabecera from '../Componentes/Cabecera';
+import CabeceraDos from '../Componentes/CabeceraDos';
 import Videos from '../Componentes/videos';
 import Navegation from '../Navegation';
 import Botones from '../Componentes/botones';
@@ -17,7 +17,7 @@ export default function Vista1() {
       <ScrollView>
         <View style={styles.container}>
 
-          <Cabecera />
+          <CabeceraDos />
           <Contenedorcito
             text={' En tendecia 🔥'}
           />
