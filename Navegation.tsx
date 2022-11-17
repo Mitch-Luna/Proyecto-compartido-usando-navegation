@@ -9,6 +9,8 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import Home from "./screen/home";
 import HomeDos from "./screen/homedos";
 import Vista1 from "./screen/Vista1";
+import vista4 from "./screen/vista4";
+import Vista4 from "./screen/vista4";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +32,7 @@ function MyTabs() {
         headerShown:false,
       }}
       />
-      <Tab.Screen name="Home " component={Home} 
+      <Tab.Screen name="vista4 " component={vista4} 
       options={{
         tabBarLabel:'',
         tabBarIcon:({color, size}) =>(
