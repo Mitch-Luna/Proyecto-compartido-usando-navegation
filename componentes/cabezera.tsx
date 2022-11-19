@@ -17,7 +17,6 @@ export default function Cabecera() {
 
     );
 }
-
 const styles=StyleSheet.create({ 
     contenedor:{    
         backgroundColor:"white",

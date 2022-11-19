@@ -14,23 +14,23 @@ export default function App() {
             showsHorizontalScrollIndicator={false}
           >
             <Video
-              imagen={require('./img/tostada.jpg')}
+              imagen={require('../img/tostada.jpg')}
               cantidad={'5,0'}
-              imagenDos={require('./img/tostada.jpg')}
+              imagenDos={require('../img/tostada.jpg')}
               textDos={' Como hacer una totada'}
               nombrePersona={'By Roberto Anny'}
             />
             <Video
-              imagen={require('./img/sushi.webp')}
+              imagen={require('../img/sushi.webp')}
               cantidad={'4,5'}
-              imagenDos={require('./img/tostada.jpg')}
+              imagenDos={require('../img/tostada.jpg')}
               textDos={' How to make sushi at home'}
               nombrePersona={'By Niki Samantha'}
             />
             <Video
-              imagen={require('./img/serial.jpg')}
+              imagen={require('../img/serial.jpg')}
               cantidad={'4,9'}
-              imagenDos={require('./img/tostada.jpg')}
+              imagenDos={require('../img/tostada.jpg')}
               textDos={' Easy oatmeal recipe'}
               nombrePersona={'By James wolden'}
             />
@@ -40,8 +40,6 @@ export default function App() {
 
     </ScrollView>
 )}
-
-
 const styles = StyleSheet.create({
     container:{
     flex:1,
