@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import CabeceraDos from '../Componentes/CabeceraDos';
-import Videos from '../Componentes/videos';
+import Videos from '../Componentes/videosNurian';
 import Navegation from '../Navegation';
 import Botones from '../Componentes/botones';
 import Platillos from '../Componentes/platillos';

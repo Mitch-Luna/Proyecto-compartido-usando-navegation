@@ -6,10 +6,11 @@ import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 
-import Home from "./screen/home";
-import HomeDos from "./screen/homedos";
-import Vista1 from "./screen/Vista1";
-import vista4 from "./screen/vista4";
+import Home from "./Screen/home";
+import HomeDos from "./Screen/homedos";
+import Vista1 from "./Screen/Vista1";
+import vista2 from "./Screen/vista2";
+import vista4 from "./Screen/vista4";
 
 
 const Tab = createBottomTabNavigator();
@@ -50,7 +51,7 @@ function MyTabs() {
         headerShown:false,
       }}
       />
-      <Tab.Screen name="HomeDos " component={HomeDos}   
+      <Tab.Screen name="vista2" component={vista2}   
       options={{
         tabBarLabel:'',
         tabBarIcon:({color, size}) =>(
