@@ -8,6 +8,7 @@ import Video from './componentes/videos';
 export default function App() {
   return (
     <ScrollView>
+      <StatusBar backgroundColor={"white"} />
       <View style={styles.container}>
         <Cabecera/>
         <ScrollView
