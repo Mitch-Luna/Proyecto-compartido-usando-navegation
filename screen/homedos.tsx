@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,ScrollView, SafeAreaView } from 'react-native';
 import Videos from '../Componentes/videos';
-import Cabecera from '../Componentes/Cabecera';
+import Cabecera from '../Componentes/header';
 
 export default function HomeDos() {
   return (
