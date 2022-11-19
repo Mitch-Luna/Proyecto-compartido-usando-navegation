@@ -49,7 +49,7 @@ export default function Video({imagen, cantidad, textDos, nombrePersona}: Props)
 }
 const styles = StyleSheet.create({
     container:{
-
+      marginTop:15,
         backgroundColor:"white",
         flex:1,
     },
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     videoUno:{
         alignSelf:'flex-end',
         borderRadius:12,
-        width:300,
+        width:350,
         height:185,
       },
 
