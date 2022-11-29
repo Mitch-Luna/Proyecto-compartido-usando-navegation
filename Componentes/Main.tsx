@@ -1,12 +1,15 @@
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { AntDesign, FontAwesome5, Ionicons } from '@expo/vector-icons'; 
 
 const Main = ()=>{
   return (
 
  <ScrollView>
+  
       <View style={styles.container}>
          <Text style={styles.perfil}>Mi perfil</Text>
+
           < View style={styles.punto}>
              <MaterialCommunityIcons name="dots-horizontal" size={28} color="black"/>
           </View>
@@ -80,25 +83,56 @@ const Main = ()=>{
         </View>
 
         <View style={styles.contenedor4}>
-        <TouchableOpacity>
+           <TouchableOpacity>
              <Text style={styles.button2}>
                  Video
              </Text>
-         </TouchableOpacity>
+           </TouchableOpacity>
 
-         <TouchableOpacity>
+           <TouchableOpacity>
              <Text style={styles.button3}>
                  Recipe
              </Text>
-         </TouchableOpacity>
+           </TouchableOpacity>
          </View>
 
+          <View >
+          <Image style={styles.image}
+           source={require('../Image/CHICA.jpg')}
+           />
+           <View>
+             <Text style={styles.textpan}>How to make Italiam</Text>
+             <Text style={styles.textpan2}>Spaghetti to home</Text>
+             <Text style={styles.textpan3}>12 Ingredients | 40 Min</Text>
+           </View>
+          
+            
+          <Image style={styles.image2}
+           source={require('../Image/file.jpg')}
+           />
+           <View>
+            <Text style={styles.textsim}>Simple chicken meal</Text>
+             <Text style={styles.textsim2}>prep dishes</Text>
+             <Text style={styles.textsim3}>12 Ingredients | 40 Min</Text>
+           </View>
+
+          <Image style={styles.image3}
+           source={require('../Image/CHICA.jpg')}/>
+           <View>
+
+           </View>
+            <Text style={styles.textha}>Hapanese fried rice</Text>
+             <Text style={styles.textha2}>12 Ingredients | 40 Min</Text>
+          </View>
+            
    </ScrollView>
+ 
 
   )
 }
 export default Main;
 const styles = StyleSheet.create({
+  
   perfil:{
     margin:20,
     fontSize:30,
@@ -106,10 +140,10 @@ const styles = StyleSheet.create({
   },
 
   container:{
-    backgroundColor:'red',
     flexDirection:'row',
     justifyContent:'space-between',
-    alignItems:'center'
+    alignItems:'center',
+    height:100,
   },
 
   punto:{
@@ -117,7 +151,6 @@ const styles = StyleSheet.create({
   },
 
   container2:{
-    backgroundColor:'green',
    justifyContent:'space-between',
     flexDirection:'row',
     alignItems:'center'
@@ -164,7 +197,6 @@ const styles = StyleSheet.create({
   },
 
   container3:{
-    backgroundColor:'pink',
     borderBottomWidth:1,
     borderColor:'gray',
     paddingBottom:30,
@@ -183,7 +215,6 @@ const styles = StyleSheet.create({
     left:15
   },
   contenedor4:{
-    backgroundColor:'pink',
     height:45,
     width:'100%',
     flexDirection:'row',
@@ -191,22 +222,138 @@ const styles = StyleSheet.create({
   },
 
  button2:{
+  top:10,
   marginHorizontal:32,
-  width:78,
+  width:75,
   height:45,
   fontSize:15,
   color:"red",
-
+  padding:10,
+  paddingLeft:30,
 
 },
  button3:{
-  marginHorizontal:34,
+  top:10,
+  marginHorizontal:32,
   width:196,
   height:45,
   fontSize:17,
+  padding:10,
+  paddingLeft:65,
   color:"white",
   backgroundColor:'red',
-  borderRadius:13,
+  borderRadius:13, 
+},
+
+contenedor5:{
+  justifyContent:'space-between',
+   flexDirection:'row',
+   alignItems:'center'
+ },
+
+ punto2:{
+left:280,
+top:35,
+ },
+
+image:{
+  height:200,
+  width:345,
+  top:20,
+  right:-20,
+  borderRadius:12,
+},
+
+textpan: {
+  fontSize:15,
+    left:40,
+    top:-60,
+    color:'white'
+    
+},
+
+textpan2:{
+  fontSize:15,
+    left:40,
+    top:-60,
+    color:'white'
+},
+
+textpan3:{
+  fontSize:10,
+  left:40,
+  top:-55,
+  color:'white'
+},
+
+icont:{
+
+},
+
+icont2:{
+
+},
+
+icont3:{
+
+},
+
+ image2:{
+    height:200,
+    width:345,
+    top:-30,
+    right:-20,
+    borderRadius:12,
+},
+
+textsim:{
+  fontSize:15,
+  left:40,
+  top:-120,
+  color:'white'
+},
+
+textsim2:{
+  fontSize:15,
+    left:40,
+    top:-120,
+    color:'white'
+},
+
+textsim3:{
+  fontSize:10,
+  left:40,
+  top:-110,
+  color:'white'
+},
+
+image3:{
+  height:200,
+  width:345,
+  top:-80,
+  right:-20,
+  borderRadius:12,
+},
+
+textha:{
+  fontSize:15,
+  left:40,
+  top:-135,
+  color:'white'
+},
+
+textha2:{
+  fontSize:10,
+  left:40,
+  top:-130,
+  color:'white'
+},
+
+   
+
   
-}, 
+
+
+
 });
+
