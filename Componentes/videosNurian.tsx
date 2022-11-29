@@ -63,15 +63,16 @@ const styles = StyleSheet.create({
     videoUno:{
         alignSelf:'flex-end',
         borderRadius:12,
-        width:350,
+        width:'100%',
         height:185,
       },
 
     detalles:{
         backgroundColor:'',
         borderRadius:12,
-        marginHorizontal:39,
+        marginHorizontal:23,
         flex:1,
+        width:'90%'
       }, 
       estrella:{
         alignItems:'center',

@@ -10,6 +10,7 @@ import Home from "./Screen/home";
 import HomeDos from "./Screen/homedos";
 import Vista1 from "./Screen/Vista1";
 import vista2 from "./Screen/vista2";
+import vista3 from "./Screen/vista3";
 import vista4 from "./Screen/vista4";
 
 
@@ -59,7 +60,7 @@ function MyTabs() {
         ),
         headerShown:false,
       }}/>
-      <Tab.Screen name="HomeTres " component={HomeDos} 
+      <Tab.Screen name="vista3" component={vista3} 
       options={{
         tabBarLabel:'',
         tabBarIcon:({color, size}) =>(

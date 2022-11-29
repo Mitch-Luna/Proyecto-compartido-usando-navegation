@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 // import Vista1 from './screen/Vista1';
 import Navegation from './Navegation';
 
-
 export default function App() {
   return (
     <Navegation
