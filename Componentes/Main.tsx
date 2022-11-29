@@ -98,7 +98,7 @@ const Main = ()=>{
 
           <View >
           <Image style={styles.image}
-           source={require('../Image/CHICA.jpg')}
+           source={require('../Image/plato6.jpeg')}
            />
            <View>
              <Text style={styles.textpan}>How to make Italiam</Text>
@@ -117,7 +117,7 @@ const Main = ()=>{
            </View>
 
           <Image style={styles.image3}
-           source={require('../Image/CHICA.jpg')}/>
+           source={require('../Image/plato3.jpg')}/>
            <View>
 
            </View>
